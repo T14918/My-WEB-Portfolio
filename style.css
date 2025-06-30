@@ -1,24 +1,36 @@
 :root{
-    --main-color:#4F772D;
-    --dark-color:#31572C;
-    --light-color:#90A955;
-    --higlight-color:#ECF39E;
+    --light-color:#DAD7CD;
+    --sub-color:#A3B18A;
+    --main-color:#588157;
+    --dark-color:#3A5A40;
+    --green-color:#344E41;
 }
 
 body
 {
-    margin: 0px;
+    background-color: var(--main-color);
 }
 
-header{
-    width: 100px;
+header
+{
+    background: var(--dark-color);
+    color: var(--light-color);
     padding: 20px;
-    background: var(--main-color);
-    color: var(--higlight-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 30px rgba (0,0,0,1);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#main-title
+{
+    color: var(--light-color)
+}
+
+#subtitle
+{
+    color: var(--sub-color)
 }
 
 boton {
