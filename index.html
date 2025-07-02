@@ -1,33 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <meta name="viewport" content="width=device-width, initian-scale=1.0">
+    <title>Home - Cristobal Salas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Changa+One:ital@0;1&family=Comic+Relief:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style type="text/css"></style>
+    <style type="text/css" id="operaUserStyle"></style>
 </head>
 <body>
     <header>
         <nav>
             <h1 id="main-title">Cristóbal Salas</h1>
             <h3 id="subtitle">3D modeler and Gamedeveloper</h3>
-            <a href="proyects.html">Proyects</a>
-            <a href="aboutMe.html">About me</a>
+            <div class="headerSections">
+                <a href="index.html">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#knowledge">Skills</a>
+            </div>
+            <div class="externalLinks">
+                <a target="_blank" href="https://www.linkedin.com/in/cristóbal-salas-474886308/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png" 
+                alt class="smallImg">
+                </a>
+                <a target="_blank" href="https://www.youtube.com/@GENERALSKELLY-YT">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" 
+                alt class="smallImg">
+                </a>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="proyecto">
-            <img src="foto.jpg" alt="IconoJuego">
-            <h3>Skelly's Office</h3>
-            <button>Jugar</button>
-        </div>
-        <div class="proyecto">
-            <img src="foto.jpg" alt="IconoJuego">
-            <h3>Eco Bridge</h3>
-            <button>Jugar</button>
-        </div>
+        <section id="projects">
+            <h2 class="title">Projects</h2>
+            <div class="projects-container">
+                <section class="cards">
+                    <div class="project">
+                        <img src="assets/LogoEcoBridge2.png" alt="EcoBridgeLogo" class="logo">
+                        <h2 class="project-name">Eco Bridge</h2>
+                        <div>
+                            <a class="project-author" 
+                            href="https://www.instagram.com/fireforgedev/" 
+                            target="_blank">Fire ForgeDevelopers
+                            </a>
+                        </div>
+                        <p class="tags-title">Used Sofware</p>
+                        <section class="tags">
+                            <a href="#software">Unity Engine</a>
+                            <a href="#software">Blender</a>
+                            <a href="#software">Photoshop</a>
+                        </section>
+                        <p class="tags-title">Roles</p>
+                        <section class="tags">
+                            <a>3D Modeler</a>
+                            <a>Technical Artist</a>
+                        </section>
+                        <button>
+                            <a href="https://flammygamedev.itch.io/eco-bridge" 
+                            target="_blank">See more</a>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="knowledge">
+            <h2 class="title">Knowledge</h2>
+            <div class="experience-details-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title" id="software">Software</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="https://program-ace.com/wp-content/uploads/unity_logo_type_2022.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Unity Engine</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/2503px-Blender_logo_no_text.svg.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Blender</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Aseprite.svg/800px-Logo_Aseprite.svg.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Aseprite</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>© 2025 Cristóbal Salas. All rights reserved.</p>
+        <p>© Till the end of times Cristóbal Salas. All rights reserved.</p>
         <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Back to Top</button>
     </footer>
 </body>
